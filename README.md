@@ -2,6 +2,16 @@
 
 This document describes the improvements applied to the Rocket Mortgage FAQ Bot, a full-stack RAG application with a FastAPI backend and React frontend.
 
+You can find these fullstack application repositories on:
+
+**Frontend**
+
+https://github.com/darde/rocket-faq-frontend
+
+**Backend**
+
+https://github.com/darde/rocket-faq-backend
+
 ---
 
 ## Item 1: Rate Limiting, Caching, Security & Cost Optimization
