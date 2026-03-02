@@ -189,6 +189,10 @@ MAX_QUESTION_LENGTH=1000
 VITE_API_KEY=             # Frontend: must match backend API_KEY if set
 ```
 
+### Videos (Prompt Injection)
+
+https://github.com/user-attachments/assets/cbe6f821-3534-459c-843b-f05a50f0cb0d
+
 ---
 
 ## 4. Cost Optimization
@@ -251,6 +255,9 @@ Before each LLM call, the system checks whether the daily or monthly token budge
 #### Caching as Cost Optimization
 
 The caching layer (described above) is also a cost optimization measure. Cached responses bypass the LLM entirely, so they incur zero token cost. For FAQ workloads with repeated questions, this can significantly reduce LLM spending.
+
+**Caching Video**
+
 
 #### Configurable Response Length
 
@@ -328,6 +335,10 @@ Regex-based detection and redaction of sensitive personal information. PII is re
 | Account Number | `account #12345678` | `[ACCOUNT NUMBER REDACTED]` |
 
 Known Rocket Mortgage contact numbers and email domains (`@rocketmortgage.com`, `@quickenloans.com`) are allowlisted to avoid false positives in LLM responses that reference official contact information.
+
+**PII Detection and Redaction Video**
+
+https://github.com/user-attachments/assets/fff859aa-593c-4ad6-b265-e35fd42751d7
 
 #### 1.2 Prompt Injection Detection
 
